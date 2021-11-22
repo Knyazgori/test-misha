@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input:focus{
+  outline: none;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 90%;
+}
