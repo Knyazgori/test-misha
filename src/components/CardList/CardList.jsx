@@ -3,12 +3,10 @@ import { useSelector } from 'react-redux';
 import Card from '../Card/Card';
 
 
-
 function CardList(props) {
   const searchWord = useSelector(state => state.searchReducer.searchWord)
   const lists = useSelector(state => state.listReducer.list)
-  console.log(searchWord);
-
+                   
   const sumLetters = searchWord.length
 
   let arr = [];
@@ -16,7 +14,8 @@ function CardList(props) {
   for (let key in lists) {
     arr.push(lists[key]);
   }
-  console.log(arr);
+
+
   return (
     <>
       <div className='container' style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-around' }}>
